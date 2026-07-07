@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="docs/README.zh-CN.md">中文文档</a>
+  <strong>English</strong> · <a href="docs/README.zh-CN.md">中文</a>
 </p>
 
 <details>
@@ -91,7 +91,7 @@ AI:  Archived to openspec/changes/archive/2025-01-23-add-dark-mode/
 
 ## Why teams adopt OpenSpec
 
-Solo, OpenSpec keeps you and your AI honest on a single repo. On a team, the hard part moves: a feature spans the API server, the web app, and a shared library; requirements are owned by one team but implemented by another.
+Solo, OpenSpec keeps you and your AI honest on a single repo. On a team, the hard part moves: a feature spans the API server, the web app, and a shared library; requirements are owned by one team but implementation lands across several repositories.
 
 **[Stores](docs/stores-beta/user-guide.md)** are the answer — planning in a repo of its own. The same `openspec/` shape you already know (specs and changes), shared by `git push` like anything else.
 
@@ -154,7 +154,7 @@ Both are in the default profile. If you want the expanded workflow (`/opsx:new`,
 
 ## Community schemas
 
-Third-party schema bundles distributed via standalone repositories — these provide opinionated workflows that integrate OpenSpec with other tools, similar to how [github/spec-kit's community extensions](https://github.com/github/spec-kit?tab=readme-ov-file#community-integrations) work.
+Third-party schema bundles distributed via standalone repositories — these provide opinionated workflows that integrate OpenSpec with other tools, similar to how [github/spec-kit's community extensions](https://github.com/github/spec-kit).
 
 → **[Browse the catalog](docs/customization.md#community-schemas)** in the customization docs.
 
@@ -206,7 +206,7 @@ openspec update
 
 When writing proposals, keep the OpenSpec philosophy in mind: we serve a wide variety of users across different coding agents, models, and use cases. Changes should work well for everyone.
 
-**AI-generated code is welcome** — as long as it's been tested and verified. PRs containing AI-generated code should mention the coding agent and model used (e.g., "Generated with Claude Code using Sonnet 4").
+**AI-generated code is welcome** — as long as it's been tested and verified. PRs containing AI-generated code should mention the coding agent and model used (e.g., "Generated with Claude Code using ...").
 
 ### Development
 
