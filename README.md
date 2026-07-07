@@ -14,6 +14,10 @@
   <a href="https://discord.gg/YctCnvvshC"><img alt="Discord" src="https://img.shields.io/discord/1411657095639601154?style=flat-square&logo=discord&logoColor=white&label=Discord&suffix=%20online" /></a>
 </p>
 
+<p align="center">
+  <a href="docs/README.zh-CN.md">中文文档</a>
+</p>
+
 <details>
 <summary><strong>The most loved spec framework.</strong></summary>
 
@@ -87,9 +91,9 @@ AI:  Archived to openspec/changes/archive/2025-01-23-add-dark-mode/
 
 ## Why teams adopt OpenSpec
 
-Solo, OpenSpec keeps you and your AI honest on a single repo. On a team, the hard part moves: a feature spans the API server, the web app, and a shared library; requirements are owned by one team and consumed by others; planning starts before any code exists.
+Solo, OpenSpec keeps you and your AI honest on a single repo. On a team, the hard part moves: a feature spans the API server, the web app, and a shared library; requirements are owned by one team but implemented by another.
 
-**[Stores](docs/stores-beta/user-guide.md)** are the answer — planning in a repo of its own. The same `openspec/` shape you already know (specs and changes), shared by `git push` like anything else. One source of truth your whole team and every coding agent can read, across every repo.
+**[Stores](docs/stores-beta/user-guide.md)** are the answer — planning in a repo of its own. The same `openspec/` shape you already know (specs and changes), shared by `git push` like anything else.
 
 - **Cross-repo features** — one change, one plan, even when the code lands in three repos.
 - **Shared requirements** — a platform team owns the specs; product teams reference them read-only, right where their coding agent can read them. No drifting wiki.
@@ -119,7 +123,7 @@ Now talk to your AI:
 - **Not sure what to build yet?** Start with `/opsx:explore`, a no-stakes thinking partner that reads your code, weighs options, and shapes a plan before anything is written. ([Explore guide](docs/explore.md))
 - **Already know what you want?** Go straight to `/opsx:propose <what-you-want-to-build>`.
 
-Both are in the default profile. If you want the expanded workflow (`/opsx:new`, `/opsx:continue`, `/opsx:ff`, `/opsx:verify`, `/opsx:bulk-archive`, `/opsx:onboard`), select it with `openspec config profile` and apply with `openspec update`.
+Both are in the default profile. If you want the expanded workflow (`/opsx:new`, `/opsx:continue`, `/opsx:ff`, `/opsx:verify`, `/opsx:bulk-archive`, `/opsx:onboard`), select it with `openspec configure`.
 
 > [!NOTE]
 > Not sure if your tool is supported? [View the full list](docs/supported-tools.md) – we support 25+ tools and growing.
@@ -128,7 +132,7 @@ Both are in the default profile. If you want the expanded workflow (`/opsx:new`,
 
 ## Docs
 
-**Start here:** the **[Documentation Home](docs/README.md)** maps everything. New to OpenSpec? Read [Getting Started](docs/getting-started.md), then [How Commands Work](docs/how-commands-work.md) (where you actually type `/opsx:propose`).
+**Start here:** the **[Documentation Home](docs/README.md)** maps everything. New to OpenSpec? Read [Getting Started](docs/getting-started.md), then [How Commands Work](docs/how-commands-work.md).
 
 → **[Getting Started](docs/getting-started.md)**: first steps<br>
 → **[Explore First](docs/explore.md)**: think it through with `/opsx:explore` before you commit<br>
@@ -150,7 +154,7 @@ Both are in the default profile. If you want the expanded workflow (`/opsx:new`,
 
 ## Community schemas
 
-Third-party schema bundles distributed via standalone repositories — these provide opinionated workflows that integrate OpenSpec with other tools, similar to how [github/spec-kit's community extension catalog](https://github.com/github/spec-kit/tree/main/extensions) handles tool integrations.
+Third-party schema bundles distributed via standalone repositories — these provide opinionated workflows that integrate OpenSpec with other tools, similar to how [github/spec-kit's community extensions](https://github.com/github/spec-kit?tab=readme-ov-file#community-integrations) work.
 
 → **[Browse the catalog](docs/customization.md#community-schemas)** in the customization docs.
 
@@ -198,11 +202,11 @@ openspec update
 
 **Small fixes** — Bug fixes, typo corrections, and minor improvements can be submitted directly as PRs.
 
-**Larger changes** — For new features, significant refactors, or architectural changes, please submit an OpenSpec change proposal first so we can align on intent and goals before implementation begins.
+**Larger changes** — For new features, significant refactors, or architectural changes, please submit an OpenSpec change proposal first so we can align on intent and goals before implementation.
 
 When writing proposals, keep the OpenSpec philosophy in mind: we serve a wide variety of users across different coding agents, models, and use cases. Changes should work well for everyone.
 
-**AI-generated code is welcome** — as long as it's been tested and verified. PRs containing AI-generated code should mention the coding agent and model used (e.g., "Generated with Claude Code using claude-opus-4-5-20251101").
+**AI-generated code is welcome** — as long as it's been tested and verified. PRs containing AI-generated code should mention the coding agent and model used (e.g., "Generated with Claude Code using Sonnet 4").
 
 ### Development
 
